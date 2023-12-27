@@ -1,0 +1,21 @@
+/* Reset some default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This ensures the container takes the full viewport height */
+}
+
+/* Style the centered form */
+.centered-form {
+    width: 100000000px; /* Adjust this width as needed */
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
