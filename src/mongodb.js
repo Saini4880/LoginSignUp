@@ -1,4 +1,3 @@
-// const { text } = require("express")
 const mongoose = require("mongoose")
 
 mongoose.connect("mongodb://0.0.0.0:27017/LoginSignUpproject")
@@ -11,21 +10,17 @@ mongoose.connect("mongodb://0.0.0.0:27017/LoginSignUpproject")
     .catch(() => {
         console.log('error')
     })
-
-
-    const LogInSchema = mongoose.Schema({
-        name:{
-            type:String,
-            required:true
-        },
-
-        password:{
-            type:String,
-            required:true
-        }
-    })
-
-    const Collection1=new mongoose.model("Loginproject",LogInSchema)
-
-    module.exports=Collection1
-
+const LogInSchema = mongoose.Schema({
+    name: {
+      type: String,
+      required: true,
+    },
+    password: {
+      type: String,
+      required: true,
+    },
+  });
+  
+  const Collection1 = new mongoose.model("Loginproject", LogInSchema);
+  
+  module.exports = Collection1;
